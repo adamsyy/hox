@@ -6,13 +6,13 @@ Decentralisation is something that has always fascinated us, ever since i starte
 <br/>
 To run the project locally on your system.
 <br/>
-1. Install ganache
-2. Metamask extension
-3. npm install
-4. set the ports to match
-5. open your terminal and run "truffle migrate --reset"
-6. "truffle test"
-7. make sure to select the specified local host network in your metamask extension.
-8. npm start
+1. Install ganache <br/>
+2. Metamask extension <br/>
+3. npm install <br/>
+4. set the ports to match <br/>
+5. open your terminal and run "truffle migrate --reset" <br/>
+6. "truffle test" <br/>
+7. make sure to select the specified local host network in your metamask extension. <br/>
+8. npm start 
 <br/>
 You are good to go!
