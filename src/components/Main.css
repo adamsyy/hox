@@ -4,13 +4,14 @@
 }   
 
 input{
-margin-bottom: 20px;
+width: 120px;
+
 
 }
 input[type=text]{
     width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
+ 
+
     box-sizing: border-box;
     border: none;
     background-color: #f1f1f1;
@@ -21,6 +22,25 @@ input[type=text]:focus{
 
 
 }
-td{
-    color: white;
+td,a{
+    color: black !important;
+}
+
+.onelinee{
+    display: inline-block;
+    padding-right: 5px;
+width: 100px;
+
+  
+}
+.onelinee button{
+
+
+    font-size: 12px;
+    
+}
+
+.h2ahne{
+    font-size: 122px !important;
+    font-weight: bold;
 }

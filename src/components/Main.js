@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 import { convertBytes } from './helpers';
 import moment from 'moment'
+import { Card, Grid } from '@geist-ui/react';
+import { Spacer } from '@geist-ui/react';
+import { Input } from '@geist-ui/react';
+import { Text, Link, Image, Button,Textarea } from '@geist-ui/react';
+
 
 import './Main.css';
 
@@ -15,7 +20,7 @@ class Main extends Component {
             <div className="content">
               <p>&nbsp;</p>
               <div  className="card mb-3 mx-auto "  id="onee" style={{ maxWidth: '512px'}} >
-                <h2 className="text-black text-monospace" ><b><span style={{color:'red'}}>Hox</span> <span style={{color:'rd'}}>it</span> <span style={{color:' '}}>today!</span></b></h2>
+                <h2 className="h2ahne" className="text-black text-monospace" ><b><span style={{color:'red', fontSize:55}}>Hox</span> <span style={{color:'rd'}}>it</span> <span style={{color:' '}}>today!</span></b></h2>
                 <br></br>
                   <form onSubmit={(event) => {
                     event.preventDefault()
@@ -33,14 +38,19 @@ class Main extends Component {
                             placeholder="description..."
                             required />
                       </div>
-                    <input type="file"  onChange={this.props.captureFile} className="text-white text-monospace"/>
-                    <button type="submit"  style={{ color: "grey", background: "black"}}  className="btn-primary btn-block"><b>Upload!</b></button>
+                      <div class="onelinee" >  <input type="file"  onChange={this.props.captureFile} className="btn btn-grey"/> </div>
+                     
+                <div class="onelinee" >  <button type="submit"  style={{ color: "white", background: "black"}}  className="btn btn-dark"><b>Upload!</b></button> 
+                </div>   
+ 
+                      
+                   
                     
 
                   </form>
               </div>
               <p>&nbsp;</p>
-              <table className="table-sm table-bordered text-monospace" style={{ width: '1000px', maxHeight: '450px'}}>
+              <table className="table table-striped table-hover" style={{ width: '1000px', maxHeight: '450px'}}>
                 <thead style={{ 'fontSize': '15px' }}>
                   <tr className="bg-dark text-white">
                     
