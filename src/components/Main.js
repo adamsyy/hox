@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
 import { convertBytes } from './helpers';
 import moment from 'moment'
-import { Card, Grid } from '@geist-ui/react';
-import { Spacer } from '@geist-ui/react';
-import { Input } from '@geist-ui/react';
-import { Text, Link, Image, Button,Textarea } from '@geist-ui/react';
+
 
 
 import './Main.css';
