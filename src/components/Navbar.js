@@ -14,8 +14,10 @@ class Navbar extends Component {
           target="_blank"
           rel="noopener noreferrer"
         >
+         <span className="span1">H</span> 
+         <span className="span2">o</span> 
+         <span className="span3">X</span> 
           
-          Hox
         </a>
         <ul className="navbar-nav px-3">
           <li>

@@ -20,7 +20,13 @@ class Main extends Component {
             <div className="content">
               <p>&nbsp;</p>
               <div  className="card mb-3 mx-auto "  id="onee" style={{ maxWidth: '512px'}} >
-                <h2 className="h2ahne" className="text-black text-monospace" ><b><span style={{color:'red', fontSize:55}}>Hox</span> <span style={{color:'rd'}}>it</span> <span style={{color:' '}}>today!</span></b></h2>
+                <h2 className="h2ahne" className="text-black text-monospace" ><b><span style={{color:'red', fontSize:55}}>
+                <span style={{color:'red', fontSize:65}}>H</span>
+                <span style={{color:'red', fontSize:60}}>o</span>
+                <span style={{color:'red', fontSize:65}}>X</span>
+              
+                
+                </span> <span style={{color:'rd'}}>it</span> <span style={{color:' '}}>today!</span></b></h2>
                 <br></br>
                   <form onSubmit={(event) => {
                     event.preventDefault()

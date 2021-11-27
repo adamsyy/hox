@@ -22,6 +22,9 @@ input[type=text]:focus{
 
 
 }
+input[type=file]{
+    background-color: black;
+}
 td,a{
     color: black !important;
 }
@@ -43,4 +46,8 @@ width: 100px;
 .h2ahne{
     font-size: 122px !important;
     font-weight: bold;
+}
+tr td{
+font-family: sans-serif;
+font-size: 12px;
 }
