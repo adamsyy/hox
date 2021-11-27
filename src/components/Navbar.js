@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Identicon from 'identicon.js';
 import box from '../box.png'
+import './Navbar.css';
 
 class Navbar extends Component {
 
@@ -28,7 +29,7 @@ class Navbar extends Component {
               </a>
             </small>
             { this.props.account
-              ? <img
+              ? <img id="dpround"
                   alt=""
                   className='ml-2'
                   width='30'

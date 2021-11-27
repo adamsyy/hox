@@ -23,6 +23,7 @@ class Main extends Component {
                     this.props.uploadFile(description)
                   }} >
                       <div className="form-group">
+  
                         <br></br>
                           <input
                             id="fileDescription"
@@ -33,7 +34,6 @@ class Main extends Component {
                             required />
                       </div>
                     <input type="file"  onChange={this.props.captureFile} className="text-white text-monospace"/>
-                    
                     <button type="submit"  style={{ color: "grey", background: "black"}}  className="btn-primary btn-block"><b>Upload!</b></button>
                     
 
@@ -43,14 +43,14 @@ class Main extends Component {
               <table className="table-sm table-bordered text-monospace" style={{ width: '1000px', maxHeight: '450px'}}>
                 <thead style={{ 'fontSize': '15px' }}>
                   <tr className="bg-dark text-white">
-                    <th scope="col" style={{ width: '10px'}}>id</th>
-                    <th scope="col" style={{ width: '200px'}}>name</th>
-                    <th scope="col" style={{ width: '230px'}}>description</th>
-                    <th scope="col" style={{ width: '120px'}}>type</th>
-                    <th scope="col" style={{ width: '90px'}}>size</th>
-                    <th scope="col" style={{ width: '90px'}}>date</th>
-                    <th scope="col" style={{ width: '120px'}}>uploader/view</th>
-                    <th scope="col" style={{ width: '120px'}}>hash/view/get</th>
+                    
+                    <th scope="col" style={{ width: '200px'}}>Name</th>
+                    <th scope="col" style={{ width: '230px'}}>Description</th>
+                    <th scope="col" style={{ width: '120px'}}>Type</th>
+                    <th scope="col" style={{ width: '90px'}}>Size</th>
+                    <th scope="col" style={{ width: '90px'}}>Date</th>
+                    <th scope="col" style={{ width: '120px'}}>Uploader/view</th>
+                    <th scope="col" style={{ width: '120px'}}>Hash/view/get</th>
                     <th scope="col" style={{ width: '120px'}}>Qr code</th>
                     <th scope="col" style={{ width: '120px'}}>Share!</th>
                   </tr>
@@ -59,7 +59,7 @@ class Main extends Component {
                   return(
                     <thead style={{ 'fontSize': '12px' }} key={key}>
                       <tr>
-                        <td>{file.fileId}</td>
+                        
                         <td>{file.fileName}</td>
                         <td>{file.fileDescription}</td>
                         <td>{file.fileType}</td>
@@ -76,15 +76,15 @@ class Main extends Component {
                          
                          <td>
                           <a
-                            href={"https://etherscan.io/address/" + file.uploader}
+                            href={"https://ipfs.infura.io/ipfs/" + file.fileHash}
                             rel="noopener noreferrer"
                             target="_blank">
-                            {file.uploader.substring(0,10)}...
+                            {file.fileHash.substring(0,10)}...
                           </a>
                          </td>
                         <td>
                           <img
-                            src={"https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://ipfs.infura.io/ipfs/" + file.fileHash}
+                            src={"https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=https://ipfs.infura.io/ipfs/"  + file.fileHash}
                             >
                       
                           </img>

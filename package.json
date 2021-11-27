@@ -1,8 +1,8 @@
 {
-  "name": "dstorage",
+  "name": "csa",
   "version": "0.1.0",
   "description": "Decentralized File Storage",
-  "author": "Dapp University",
+  "author": "adamsy",
   "homepage": ".",
   "dependencies": {
     "@geist-ui/react": "^2.2.0",
