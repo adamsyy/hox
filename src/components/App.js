@@ -127,6 +127,11 @@ class App extends Component {
               uploadFile={this.uploadFile}
             />
         }
+       <div class="adam1">
+         
+        
+         
+       </div>
       </div>
     );
   }

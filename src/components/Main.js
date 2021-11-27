@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import { convertBytes } from './helpers';
 import moment from 'moment'
 
+import './Main.css';
+
+
 class Main extends Component {
 
   render() {
@@ -11,8 +14,9 @@ class Main extends Component {
           <main role="main" className="col-lg-12 ml-auto mr-auto" style={{ maxWidth: '1024px' }}>
             <div className="content">
               <p>&nbsp;</p>
-              <div className="card mb-3 mx-auto bg-dark" style={{ maxWidth: '512px' }}>
-                <h2 className="text-white text-monospace bg-dark"><b>Hox it today!</b></h2>
+              <div  className="card mb-3 mx-auto "  id="onee" style={{ maxWidth: '512px'}} >
+                <h2 className="text-black text-monospace" ><b><span style={{color:'red'}}>Hox</span> <span style={{color:'rd'}}>it</span> <span style={{color:' '}}>today!</span></b></h2>
+                <br></br>
                   <form onSubmit={(event) => {
                     event.preventDefault()
                     const description = this.fileDescription.value
@@ -28,8 +32,11 @@ class Main extends Component {
                             placeholder="description..."
                             required />
                       </div>
-                    <input type="file" onChange={this.props.captureFile} className="text-white text-monospace"/>
-                    <button type="submit" className="btn-primary btn-block"><b>Upload!</b></button>
+                    <input type="file"  onChange={this.props.captureFile} className="text-white text-monospace"/>
+                    
+                    <button type="submit"  style={{ color: "grey", background: "black"}}  className="btn-primary btn-block"><b>Upload!</b></button>
+                    
+
                   </form>
               </div>
               <p>&nbsp;</p>
@@ -44,6 +51,8 @@ class Main extends Component {
                     <th scope="col" style={{ width: '90px'}}>date</th>
                     <th scope="col" style={{ width: '120px'}}>uploader/view</th>
                     <th scope="col" style={{ width: '120px'}}>hash/view/get</th>
+                    <th scope="col" style={{ width: '120px'}}>Qr code</th>
+                    <th scope="col" style={{ width: '120px'}}>Share!</th>
                   </tr>
                 </thead>
                 { this.props.files.map((file, key) => {
@@ -64,13 +73,26 @@ class Main extends Component {
                             {file.uploader.substring(0,10)}...
                           </a>
                          </td>
-                        <td>
+                         
+                         <td>
                           <a
-                            href={"https://ipfs.infura.io/ipfs/" + file.fileHash}
+                            href={"https://etherscan.io/address/" + file.uploader}
                             rel="noopener noreferrer"
                             target="_blank">
-                            {file.fileHash.substring(0,10)}...
+                            {file.uploader.substring(0,10)}...
                           </a>
+                         </td>
+                        <td>
+                          <img
+                            src={"https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://ipfs.infura.io/ipfs/" + file.fileHash}
+                            >
+                      
+                          </img>
+                        </td>
+                        <td>
+                        <a href={"whatsapp://send?text=https://ipfs.infura.io/ipfs/" + file.fileHash} data-action="share/whatsapp/share"> <img src="https://cdn-icons.flaticon.com/png/512/3670/premium/3670051.png?token=exp=1638032014~hmac=1458dfcedc3ab96e295096e579e6956a" height="20" width="20"></img> </a>
+                        
+                        <a href={"http://www.twitter.com/share?url=https://ipfs.infura.io/ipfs/" + file.fileHash} data-action="share/whatsapp/share"> <img src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c53e.png" height="20" width="20"></img> </a>
                         </td>
                       </tr>
                     </thead>
