@@ -22,9 +22,7 @@ input[type=text]:focus{
 
 
 }
-input[type=file]{
-    background-color: black;
-}
+
 td,a{
     color: black !important;
 }
