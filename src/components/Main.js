@@ -41,7 +41,7 @@ class Main extends Component {
                             placeholder="description..."
                             required />
                       </div>
-                      <div class="onelinee" >  <input type="file"  onChange={this.props.captureFile} className="btn btn-white"/> </div>
+                      <div class="onelinee" >  <input type="file"  onChange={this.props.captureFile} className="btn btn-white]"/> </div>
                      
                 <div class="onelinee" >  <button type="submit"  style={{ color: "white", background: "black"}}  className="btn btn-dark"><b>Upload!</b></button> 
                 </div>   
