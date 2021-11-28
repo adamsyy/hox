@@ -116,6 +116,10 @@ class App extends Component {
   }
 
   render() {
+   //history 
+
+
+
     return (
       <div>
         <Navbar account={this.state.account} />
