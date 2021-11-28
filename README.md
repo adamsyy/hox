@@ -18,9 +18,9 @@ To run the project locally on your system.
 You are good to go!
 <br/>
 
-![Image-1](https://bafybeic5eini3qunzf35urs4tqtovn3jvfqcayrz4ttvvni4bmclqadnku.ipfs.infura-ipfs.io/)
+![Image-1](https://ipfs.infura.io/ipfs/QmdhJm4LgeBQWkCmZgVEnia36VPs3TTzBQ3z7z9nyktknv)
 <br/>
 <br/>
 <br/>
-![Image-2](https://bafybeidutj5taxktkr4nmolaaupnmvrcwi4b3s77x3pi3cllks6n7zxbqi.ipfs.infura-ipfs.io/)
+![Image-2](https://bafybeifeqlfaptsxq5rfasu6pxlglmjfowjvqh4dqirs6ffhrjyfh552va.ipfs.infura-ipfs.io/)
 
